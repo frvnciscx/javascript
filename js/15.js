@@ -8,7 +8,7 @@ const carrito =[
     {nombre: "Tablet", precio: 300},
     {nombre: "Audifonos", precio: 200},
     {nombre: "Teclado", precio: 50},
-    {nombre: "Celular", precio: 500},
+    {nombre: 5, precio: 500},
     {nombre: "Bocinas", precio: 300},
     {nombre: "Laptop", precio: 800},
 ];
@@ -39,8 +39,9 @@ resultado = carrito.filter(function(producto){
 });
 
 resultado = carrito.filter(function(producto){ //valor igual a la condición
-    return producto.nombre === "Celular"
+    return producto.nombre === 5
 });
+
 resultado2 = carrito.filter(function(producto){ //valor que es diferente
     return producto.nombre !== "Celular"
 });
